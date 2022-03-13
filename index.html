@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-25 FGA || Restaurant Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Kits -->
+    <script src="https://kit.fontawesome.com/922eb8e20d.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- Section Navbar -->
+    <div class="header header-fixed" id="navbar">
+        <div class="navbar container">
+            <div class="logo"><a href="#">expice</a></div>
+            <input type="checkbox" id="navbar-toggle">
+            <label for="navbar-toggle"><i></i></label>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-center"><a href="#">Menu One</a></li>
+                    <li class="menu-center"><a href="#">Menu Two</a></li>
+                    <li class="menu-center"><a href="#">Menu Three</a></li>
+                    <li class="menu-center"><a href="#">Menu Four</a></li>
+                    <li class="menu-right"><a href="#"><i class="fas fa-user"></i> My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Section Jumbotron -->
+    <section class="jumbotron">
+        <div class="left-jumbotron">
+            <h1>Food</h1>
+            <h2>Discover Restaurant & Delicious Food</h2>
+            <div class="searchbox-wrap">
+                <input type="text" placeholder="Search Restaurant, Food" autocomplete="off">
+                <button><span>Go</span></button>
+            </div>
+        </div>
+        <div class="right-jumbotron">
+            <img src="assets/img/foodimg-jumbotron.png">
+        </div>
+        <div class="indicator">
+            <div class="indicator-top"></div>
+            <div class="indicator-bottom"></div>
+        </div>
+    </section>
+
+    <!-- Section Booking -->
+    <section class="booking">
+        <div class="img-left">
+            <img src="assets/img/sayur1.png">
+        </div>
+        <div class="content-booking">
+            <hr>
+            <h3>Advance Booking</h3>
+            <div class="searchbox-booking">
+                <input type="text" placeholder="Search Restaurant...." autocomplete="off">
+                <button><span>Go</span></button>
+            </div>
+            <div class="schedule">
+                <div class="schedule-detail">
+                    <h6>Date <span><i class="fas fa-chevron-down"></i></span></h6>
+                    <p>13-03-2022</p>
+                </div>
+                <div class="schedule-detail">
+                    <h6>Time <span><i class="fas fa-chevron-down"></i></span></h6>
+                    <p>5.50 PM</p>
+                </div>
+                <div class="schedule-detail">
+                    <h6>Guests <span><i class="fas fa-chevron-down"></i></span></h6>
+                    <p>3 Persons</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-right">
+            <img src="assets/img/sayur2.png">
+        </div>
+    </section>
+
+
+    <!-- JQuery Menu Fixed -->
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 75) {
+                $("#navbar").addClass("shrink");
+            } else if (scroll < 75) {
+                $("#navbar").removeClass("shrink");
+            }
+        });
+    </script>
+</body>
+
+</html>
