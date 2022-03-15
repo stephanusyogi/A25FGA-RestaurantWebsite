@@ -19,8 +19,10 @@
     <!-- Fontawesome Kits -->
     <script src="https://kit.fontawesome.com/922eb8e20d.js" crossorigin="anonymous"></script>
 
-    <!-- Jquery -->
-    <script src="assets/js/jquery.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -44,7 +46,7 @@
 
     <!-- Section Jumbotron -->
     <section class="jumbotron">
-        <div class="left-jumbotron">
+        <div class="left-jumbotron" data-aos="fade-right" data-aos-duration="3000">
             <h1>Food</h1>
             <h2>Discover Restaurant & Delicious Food</h2>
             <div class="searchbox-wrap">
@@ -52,17 +54,17 @@
                 <button><span>Go</span></button>
             </div>
         </div>
-        <div class="right-jumbotron">
+        <div class="right-jumbotron" data-aos="fade-left" data-aos-duration="3000">
             <img src="assets/img/foodimg-jumbotron.png">
         </div>
         <div class="indicator">
             <div class="indicator-top"></div>
-            <div class="indicator-bottom"></div>
+            <div class="indicator-bottom" onclick="scrollDiv()"></div>
         </div>
     </section>
 
     <!-- Section Booking -->
-    <section class="booking">
+    <section class="booking" data-aos="fade-up" data-aos-duration="2000">
         <div class="img-left">
             <img src="assets/img/sayur1.png">
         </div>
@@ -94,11 +96,11 @@
     </section>
 
     <!-- Section Main -->
-    <section class="main">
-        <h1>Explore Our Foods</h1>
-        <p class="desc-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet.</p>
+    <section class="main" id="main">
+        <h1 data-aos="fade-down">Explore Our Foods</h1>
+        <p data-aos="fade-down" class="desc-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet.</p>
         <div class="contents">
-            <div class="contents-item">
+            <div class="contents-item" data-aos="flip-left" data-aos-duration="1000">
                 <div class="img-card" style="background-image:url('assets/img/makanan1.jpg');">
                 </div>
                 <div class="body-item">
@@ -113,7 +115,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
                 </div>
             </div>
-            <div class="contents-item">
+            <div class="contents-item" data-aos="flip-left" data-aos-duration="1000">
                 <div class="img-card" style="background-image:url('assets/img/makanan2.jpg');">
                 </div>
                 <div class="body-item">
@@ -128,7 +130,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
                 </div>
             </div>
-            <div class="contents-item">
+            <div class="contents-item" data-aos="flip-left" data-aos-duration="1000">
                 <div class="img-card" style="background-image:url('assets/img/makanan3.jpg');">
                 </div>
                 <div class="body-item">
@@ -143,7 +145,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
                 </div>
             </div>
-            <div class="contents-item">
+            <div class="contents-item" data-aos="flip-left" data-aos-duration="1000">
                 <div class="img-card" style="background-image:url('assets/img/makanan4.jpg');">
                 </div>
                 <div class="body-item">
@@ -158,7 +160,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
                 </div>
             </div>
-            <div class="contents-item">
+            <div class="contents-item" data-aos="flip-left" data-aos-duration="1000">
                 <div class="img-card" style="background-image:url('assets/img/makanan5.jpg');">
                 </div>
                 <div class="body-item">
@@ -173,7 +175,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
                 </div>
             </div>
-            <div class="contents-item">
+            <div class="contents-item" data-aos="flip-left" data-aos-duration="1000">
                 <div class="img-card" style="background-image:url('assets/img/makanan6.jpg');">
                 </div>
                 <div class="body-item">
@@ -191,8 +193,37 @@
         </div>
     </section>
 
+    <!-- Section Download -->
+    <section class="download">
+        <div class="left-download" data-aos="fade-right">
+            <h2>Download App For Exciting Deals</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. </p>
+            <ul>
+                <li>
+                    <i class="fab fa-google-play"></i>
+                    <div class="download-desc">
+                        <span>GET IT ON</span>
+                        <p>Google Play</p>
+                    </div>
+                </li>
+                <li class="right-down-icon">
+                    <i class="fab fa-apple"></i>
+                    <div class="download-desc">
+                        <span>Download On The</span>
+                        <p>App Store</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="green-box"></div>
+        </div>
+        <div class="right-download" data-aos="fade-left">
+            <img src="assets/img/sayur2.png" class="img-daun">
+            <img src="assets/img/mobileapp.png" class="img-app">
+        </div>
+    </section>
+
     <!-- Section Footer -->
-    <section class="footer">
+    <section class="footer" data-aos="fade-up">
         <h1>Get Notified</h1>
         <h1>About Our New Menu</h1>
         <p>Insert your email in this box, we will send you newsletter.</p>
@@ -219,16 +250,27 @@
 
 
 
-    <!-- JQuery Menu Fixed -->
+    <!-- Javscript Menu Fixed -->
     <script>
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            if (scroll >= 75) {
-                $("#navbar").addClass("shrink");
-            } else if (scroll < 75) {
-                $("#navbar").removeClass("shrink");
+        AOS.init();
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop >= 75 || document.documentElement.scrollTop >= 75) {
+                document.getElementById("navbar").classList.add("shrink");
+            } else {
+                document.getElementById("navbar").classList.add("shrink-hide");
+                document.getElementById("navbar").classList.remove("shrink");
             }
-        });
+        }
+
+        function scrollDiv() {
+            var element = document.getElementById("main");
+            element.scrollIntoView();
+        }
     </script>
 </body>
 
